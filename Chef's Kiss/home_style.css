@@ -72,19 +72,23 @@ body {
 
 .mainRunner {
   border: 1px solid #000;
-  display: grid;
-  grid-template-rows: 1fr;
-}
-  
-.main_item:first-of-type{
-	grid-column: 1 / span 1;
-	grid-row: 1 / span 1;
-	z-index: 1;
+  display: flex;
+  margin-bottom: 50px;
 }
 
-.main_item:last-of-type{
-	margin-left: 1022px;
-	grid-column: 1 / span 1;
-	grid-row: 1 / span 1;
-	z-index: 2;
+.secondPart {
+	border: 1px solid #000;
+}
+ 
+.leftLogo {
+border: 1px solid green;
+  display: inline-block;
+  }
+.display {
+border: 1px solid green;
+  display: inline-block;
+  }
+.rightLogo {
+  border: 1px solid green;
+  display: inline-block;
 }
