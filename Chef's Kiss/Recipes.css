@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    background: rgb(0, 0, 0);
+}
+
+.card {
+    background: white;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.container {
+    height: 300px;
+    width: 250px;
+}
+
+.recipe-1 {
+    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/198594927_636978533929362_5895823369253501036_n.jpg");
+}
+
+.recipe-2 {
+    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/247517404_592283551982612_2788117762222762960_n.jpg");
+}
+
+.recipe-3 {
+    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/270296712_269532495164216_8087519797152770548_n.jpg");
+}

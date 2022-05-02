@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chef's Kiss</title>
+        <title>Chef Kiss</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet'  href='home_style.css'>
     </head>
     <body>
 		<div class="header">
-				<div class="header-left">
-					<img src="Logo.jpg" width=20%> 
-			
+
 					<div class="title">
-						Chef's Kiss
+						&emsp; &emsp; &ensp; Chef Kiss
 					</div>
-				</div> 
+					
+					<div id="mainLogo">
+						<img src="Logo.jpg" width=50%>
+					</div> 
 				<!-- Have to nest the title in the left div to get the effect that I want with the "justify-content: space-between" property in the header-div --> 
 			
 				<div class="socials">
 					
+					<a href="https://twitter.com/ChefKiss_ULTD">
+						<img src="Twitter Logo.png" width="40">
+					</a>
+
 					<a href="https://www.instagram.com/mealsbymood/">
 						<img src="IG Logo.png" width="40">
 					</a>
@@ -35,48 +40,57 @@
 			<a href="home.html">Home</a>
 			<a href="about.html">About</a>
 			<a href="merch.html">Merch</a>
-			<a href="recipes.html">Recipes</a>
+			<a href="Recipes.html">Recipes</a>
 			<a href="contact.html">Contact</a>
 		</div>
 		<!-- End of nav-bar section -->
 		
 		<div class="mainRunner">
-			<img src="IMG_0753.jpeg" height=705 width=70%>
-			<img src="IG Logo.png" height=705 width=30%>
+			<img src="IMG_0753.jpeg" width=55%>
+			<div id="Bio">Self taught chef specializing in Seasoned Cuisine and Stress Free Dining. Sit back and relax while Chef Moody handles your game night, girls night, and date night appetite. From finger foods to fine dining, all meals provide that homemade feel and a stress reliving mood.
+			</div>
 			<!-- Learned that I can put a percentage on width to take up a certain amount of space in the div -->
 		</div>
 		<!-- End of main area -->
 
 		<div class="continue">
-			Preview recipes below!
+			Preview the meal of the day below!
 		</div>
 		
 		<div class="secondPart">
 				<img src="Logo.jpg" width=20%>
-				<img src="Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/198594927_636978533929362_5895823369253501036_n.jpg" height="705">
+				<div class="card">
+					<script>
+						var captions = ["Air fried Lemon Pepper Buffalo Wings served with baked Cajun Parmesan fries!!! 🥵🔥🐓","Blackened Salmon, Shrimp Fettuccine drizzled with Gouda White Wine Sauce, Asparagus, and Garlic Bread!🤤👨🏾‍🍳.","Rosemary Garlic Lamb Chops, Lemon Butter Garlic Seared Scallops, Seasoned Sugar Snap Peas, and Loaded Mashed Potatoes.👨🏾‍🍳🔥"];
+						var images = ["Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/198594927_636978533929362_5895823369253501036_n.jpg","Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/247517404_592283551982612_2788117762222762960_n.jpg","Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/270296712_269532495164216_8087519797152770548_n.jpg"];
+						var links = ["Recipes.html","Recipes.html","Recipes.html"];
+						var i = 0;
+						var renew = setInterval(function(){
+							if(captions.length == i){
+								i = 0;
+							}
+							else {
+							document.getElementById("bannerImage").src = images[i]; 
+							document.getElementById("bannerCaption").textContent = captions[i];
+							document.getElementById("bannerLink").href = links[i]; 
+							i++;
+				
+						}
+						},1000);
+						</script>
+				
+				
+				
+				
+				<img id="bannerImage" height="605" width="605">	
+					<div class="container">
+					  <div id="bannerCaption"></div>
+					  <br><a id="bannerLink">Click to see recipe</a></br>
+					</div>
+				  </div>
 				<img src="Logo.jpg" width=20%>
 		</div>
 		<!-- End of second part -->
 
-		<div class="scroller">
-			<div class="item"><img src="Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/198594927_636978533929362_5895823369253501036_n.jpg"></div>
-			<div class="item"><img src="Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/144661266_256956455837556_3260738929156620237_n.jpg"></div>
-			<div class="item">box-3</div>
-			<div class="item">box-4</div>
-			<div class="item">box-5</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-			<div class="item">box-6</div>
-		</div>
-		<!-- End of scroll bar-->
     </body>
 </html>
