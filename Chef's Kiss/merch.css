@@ -65,7 +65,7 @@ body {
     background-color: rgb(0, 0, 0);
     height: 300px;
     margin-bottom: 15px;
-    background-size: cover;
+    background-size:cover;
 }
 
 .container {
@@ -73,17 +73,10 @@ body {
     width: 250px;
 }
 
-.recipe-1 {
-    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/198594927_636978533929362_5895823369253501036_n.jpg");
+.merch-1 {
+    background-image: url("apron.jpeg");
 }
 
-.recipe-2 {
-    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/247517404_592283551982612_2788117762222762960_n.jpg");
-}
-
-.recipe-3 {
-    background-image: url("Recipes/Chef Kiss Unlimited LLC (@mealsbymood) • Instagram photos and videos_files/270296712_269532495164216_8087519797152770548_n.jpg");
-}
 
 footer {
     font-size: 10px;

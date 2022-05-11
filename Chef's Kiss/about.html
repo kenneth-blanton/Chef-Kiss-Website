@@ -8,9 +8,62 @@
 </head>
 <body>
 
-<h1>About Us</h1>
-<p>Description of Chef's Kiss</p>
-<a href="home.html">Home page</a>
+    <div class="header">
+
+            <div class="title">
+                &emsp; &emsp; &ensp; Chef Kiss
+            </div>
+            
+            <div id="mainLogo">
+                <img src="Logo.jpg" width=50%>
+            </div> 
+        <!-- Have to nest the title in the left div to get the effect that I want with the "justify-content: space-between" property in the header-div --> 
+
+        <div class="socials">
+            
+            <a href="https://twitter.com/ChefKiss_ULTD">
+                <img src="Twitter Logo.png" width="40">
+            </a>
+
+            <a href="https://www.instagram.com/mealsbymood/">
+                <img src="IG Logo.png" width="40">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/chef-kiss-unlimited-llc-6359b4232/">
+                <img src="LinkedIn.png" width="40">
+            </a>
+        
+        </div>
+    </div>
+        <!-- End of header section -->
+
+    <div class="nav-bar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="merch.html">Merch</a>
+        <a href="Recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+    </div>
+        <!-- End of nav-bar section -->
+
+    <div class="mainRunner">
+        <img src="IMG_0753.jpeg" width=55%>
+        <div id="Bio">
+            Self taught chef specializing in Seasoned Cuisine and Stress Free Dining. Sit back and relax while Chef Moody handles your game night, girls night, and date night appetite. From finger foods to fine dining, all meals provide that homemade feel and a stress reliving mood.
+        </div>
+        <!-- Learned that I can put a percentage on width to take up a certain amount of space in the div -->
+    </div>
+		<!-- End of main area -->
+    <div class="audio">
+       <audio controls>
+           <source src="Moodini - Trials To Triumph.mp3" type="audio/mpeg">
+       </audio> 
+    </div>
 
 </body>
+
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Kiss All Rights Reserved</p>
+    </footer>
+    <!-- Copyright footer that updates yearly -->
 </html>

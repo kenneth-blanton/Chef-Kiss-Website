@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<script> today = new Date().toLocaleDateString()
+
+	console.log(today)
+	</script>
+<html>
+    <head>
+        <title>Contact Me!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet'  href='contact_style.css'>
+		<link rel='stylesheet'  href='contact_form.css'>
+		<link href="contact-form.css" rel="stylesheet">
+    </head>
+    <body>
+		<div class="header">
+
+					<div class="title">
+						&emsp; &emsp; &ensp; Chef Kiss
+					</div>
+					
+					<div id="mainLogo">
+						<img src="Logo.jpg" width=50%>
+					</div> 
+				<!-- Have to nest the title in the left div to get the effect that I want with the "justify-content: space-between" property in the header-div --> 
+			
+				<div class="socials">
+					
+					<a href="https://twitter.com/ChefKiss_ULTD">
+						<img src="Twitter Logo.png" width="40">
+					</a>
+
+					<a href="https://www.instagram.com/mealsbymood/">
+						<img src="IG Logo.png" width="40">
+					</a>
+					
+					<a href="https://www.linkedin.com/in/chef-kiss-unlimited-llc-6359b4232/">
+						<img src="LinkedIn.png" width="40">
+					</a>
+				
+				</div>
+		</div>
+		<!-- End of header section -->
+		
+		<div class="nav-bar">
+			<a href="home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="merch.html">Merch</a>
+			<a href="Recipes.html">Recipes</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<!-- End of nav-bar section -->
+
+		<div class="main">
+			<table class="main">
+				<tr>
+				<th>Email:</th>  
+				<td>mmarshall.moody74@gmail.com</td>      
+				</tr>  
+				<tr>
+				<th>Phone:</th>
+				<td>(817) 793-0098</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="fcf-body">
+
+			<div id="fcf-form">
+			<h3 class="fcf-h3">Contact us</h3>
+		
+			<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+				
+				<div class="fcf-form-group">
+					<label for="Name" class="fcf-label">Your name</label>
+					<div class="fcf-input-group">
+						<input type="text" id="Name" name="Name" class="fcf-form-control" required>
+					</div>
+				</div>
+		
+				<div class="fcf-form-group">
+					<label for="Email" class="fcf-label">Your email address</label>
+					<div class="fcf-input-group">
+						<input type="email" id="Email" name="Email" class="fcf-form-control" required>
+					</div>
+				</div>
+		
+				<div class="fcf-form-group">
+					<label for="Message" class="fcf-label">Your message</label>
+					<div class="fcf-input-group">
+						<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+					</div>
+				</div>
+		
+				<div class="fcf-form-group">
+					<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+				</div>
+		
+			</form>
+			</div>
+		
+		</div>
+
+    </body>
+
+    <footer>
+		<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chef Kiss All Rights Reserved</p>
+	</footer>
+    
+</html>

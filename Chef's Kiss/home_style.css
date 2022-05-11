@@ -61,6 +61,7 @@ body {
 	width: 30%;
 	transform: translate(0%, 25%);
 	width: fit-content;
+	padding: 10px;
 }
 
 .continue {
@@ -103,4 +104,10 @@ body {
 
   #bannerLink {
 	  color:rgb(255, 255, 255);
+  }
+
+  footer {
+	  font-size: 10px;
+	  text-align: right;
+	  color: rgb(255, 255, 255);
   }
