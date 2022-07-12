@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet'  href='Recipes.css'>
+        <script src="Recipes.js" defer></script>
     </head>
     <body>
 
@@ -38,7 +39,7 @@
         <!-- End of header section -->
 
         <div class="nav-bar">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="merch.html">Merch</a>
             <a href="Recipes.html">Recipes</a>
@@ -71,6 +72,22 @@
                     </div>
             </div>
         </div>
+
+        <form>
+            <br>
+            <input type="checkbox" class="menuItem" id="item1" value="5.99" />
+            <label for="item1">Air fried Lemon Pepper Buffalo Wings ($5.99)</label>
+            <input type="checkbox" class="menuItem" id="item2" value="5.99" />
+            <label for="item2">Blackened Salmon ($5.99)</label>
+            <input type="checkbox" class="menuItem" id="item3" value="5.99" />
+            <label for="item3">Rosemary Garlic Lamb Chops ($5.99)</label>
+            <br>
+            <label>Total Order Cost:</label>
+            <label id="billTotal">$0</label>
+        </form>
+        
+        
+
     </body>
 
     <footer>
